@@ -17,7 +17,8 @@
         "dev": "node log.js dev & vite --config vite/config.dev.mjs",
         "build": "node log.js build & vite build --config vite/config.prod.mjs",
         "dev-nolog": "vite --config vite/config.dev.mjs",
-        "build-nolog": "vite build --config vite/config.prod.mjs"
+        "build-nolog": "vite build --config vite/config.prod.mjs",
+        "deploy": "gh-pages -d dist"
     },
     "devDependencies": {
         "terser": "^5.31.0",
@@ -25,6 +26,7 @@
         "vite": "^5.3.1"
     },
     "dependencies": {
+        "gh-pages": "^6.1.1",
         "phaser": "^3.85.2"
     }
 }
